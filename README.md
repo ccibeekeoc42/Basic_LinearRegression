@@ -16,8 +16,8 @@ $$\hat{y} = wx + b$$
 $$MSE = \frac{1}{N} \Sigma_{i=1}^n({y}-\hat{y})^2$$ 
 $$J(w,b) = \frac{1}{N} \Sigma_{i=1}^n({y}- (w_{i}x + b))^2$$
 3. and the derivitive of the cost function, with respect to both the weight and bias respectively:  
-$$\frac{dJ}{dw} = \frac{1}{N} \Sigma-2x_{i}({y}- (w_{i}x + b))^2$$
-$$\frac{dJ}{db} = \frac{1}{N} \Sigma-2({y}- (w_{i}x + b))^2$$
+$$\frac{dJ}{dw} = \frac{1}{N} \Sigma-2x_{i}({y}- (w_{i}x + b))$$
+$$\frac{dJ}{db} = \frac{1}{N} \Sigma-2({y}- (w_{i}x + b))$$
 
 The derivitive (negative graidient) of the cost functions tells us which direction to go to minimize the loss/ cost function which happens to be the $MSE$ in this example.
 
@@ -25,7 +25,7 @@ The derivitive (negative graidient) of the cost functions tells us which directi
   src="reg_example.png"
   alt="Alt text"
   title="Optional title"
-  style="display: block; align: center; margin: 0 auto; max-width: 200px">
+  style="display: block; align: center; margin: 0 auto; max-width: 180px">
 
 With each itiration, we have an update rule for the new weight & bias to minimize the cost function and this update rule is given by:
 $$w = w + \alpha . dw$$
@@ -36,5 +36,7 @@ where $\alpha$ is the selected learning rate which tells us how fast or slow to 
   src="learning_rate.png"
   alt="Alt text"
   title="Optional title"
-  style="display: block; align: center; margin: 0 auto; max-width: 300px">
+  style="display: block; align: center; margin: 0 auto; max-width: 180px">
 
+### Steps to completing the project
+1. Import the necessary modules/ packages needed for this project.
