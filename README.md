@@ -40,3 +40,9 @@ where $\alpha$ is the selected learning rate which tells us how fast or slow to 
 
 ### Steps to completing the project
 1. Import the necessary modules/ packages needed for this project.
+2. Generate your dataset and split them into train & test sets.
+3. Plot your dataset for visualization.
+4. Implement the linear regression algorithm using np arrays ($fit(X,y)$ & $predict(X)$):
+    * Initialize your weight vector (all same values in the vector) to 0.
+    * initialize your bias.
+5. Test your regressor & evaluate the error using the $MSE$.
