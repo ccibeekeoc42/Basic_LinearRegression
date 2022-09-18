@@ -18,18 +18,6 @@ $$J(w,b) = \frac{1}{N} \Sigma_{i=1}^n({y}- (w_{i}x + b))^2$$
 3. and the derivitive of the cost function, with respect to both the weight and bias respectively:  
 $$\frac{dJ}{dw} = \frac{1}{N} \Sigma-2x_{i}({y}- (w_{i}x + b))^2$$
 $$\frac{dJ}{db} = \frac{1}{N} \Sigma-2({y}- (w_{i}x + b))^2$$
-$$J^{'}(w,b) = 
-\begin{bmatrix} 
-\frac{dJ}{dw} \\
-\\
-\frac{dJ}{db}
-\end{bmatrix}
-=
-\begin{bmatrix} 
-\frac{1}{N} \Sigma-2x_{i}({y}- (w_{i}x + b))^2 \\
-\\
-\frac{1}{N} \Sigma-2({y}- (w_{i}x + b))^2
-\end{bmatrix}$$
 
 The derivitive (negative graidient) of the cost functions tells us which direction to go to minimize the loss/ cost function which happens to be the $MSE$ in this example.
 
